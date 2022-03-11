@@ -33,6 +33,8 @@ let weather = {
             "Wind speed: " + speed + " km/h";
         document.querySelector(".weather").classList.remove("loading");
         //happened ...Tui abar code dekhchis kno banch%%.
+        document.body.style.backgroundImage =
+            "url('https://source.unsplash.com/1600x900/?" + name + "')";
     },
     search: function () {
         this.fetchWeather(document.querySelector(".search-bar").value);
